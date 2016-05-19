@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="scramble.js"></script>
+
+<title> 
+
+First build 
+
+</title> 
+
+</head>
+
+<body>
+	
+<div style="width:120;display:inline-block;float:left;">
+
+<center>
+<table> 
+<tr><td><input type=button value=&pi; onClick=addsymb(this.value),show()><td><input type=button value=&tau; onClick=addsymb(this.value),show()><td><input type=button value=&sigma; onClick=addsymb(this.value),show()>
+<tr><td><input type=button value=&chi; onClick=addsymb(this.value),show()><td><input type=button value=&nu; onClick=addsymb(this.value),show()><td><input type=button value=&theta; onClick=addsymb(this.value),show()>
+<tr><td><input type=button value=&eta; onClick=addsymb(this.value),show()><td><input type=button value=&psi; onClick=addsymb(this.value),show()><td><input type=button value=&lambda; onClick=addsymb(this.value),show()>
+<tr><td><input type=button value=&delta; onClick=addsymb(this.value),show()><td><input type=button value=&phi; onClick=addsymb(this.value),show()><td><input type=button value=&mu; onClick=addsymb(this.value),show()>
+<tr><td><input type=button value=&alpha; onClick=addsymb(this.value),show()><td><input type=button value=&beta; onClick=addsymb(this.value),show()><td><input type=button value=&gamma; onClick=addsymb(this.value),show()>
+</table>
+</center>
+</div>
+
+
+<div style="width:39%;display:inline-block;float:left">
+
+<button onClick="addsect()" >Add section</button>
+<button onClick="removesect()" >Remove section</button>
+
+<br>
+<br>
+
+
+<form id=qs name=qs>
+
+</form>
+
+<br>
+
+<button onClick=build(1)>build</button> &nbsp; 
+<!-- <button onClick=show()>show</button> &nbsp; --> 
+<button onClick=scramble()>scramble</button> &nbsp; 
+<!-- <button onClick=check()>check</button> &nbsp; --> <br> <br>
+<button onClick=scramble4()>scramble * 4</button> &nbsp; 
+
+</div>
+
+
+
+	
+<div id="tabdiv" style="width:49%;display:inline-block;float:right;">
+
+<table width=100% id="maintab" border=1>
+<tbody id="tab">
+<tr> <td> <center id="center">Question Paper</center> <br></tr>
+</tbody>
+</table>
+
+</div>
+
+
+<a href="" id="down"></a>
+</body>
+
+</html>
