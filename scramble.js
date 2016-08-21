@@ -235,9 +235,62 @@ function addsymb(sym) {
 	//document.getElementsByName('act').value = oldtxt + sym;
 	document.getElementsByName('act')[0].value = oldtxt + sym;
 
-}
-	
+	document.getElementsByName('act')[0].focus();
 
+}
+
+
+
+function addNewLine() {
+	
+	var oldtxt = document.getElementsByName('act')[0].value;
+	
+	document.getElementsByName('act')[0].value = oldtxt + "<br>";
+
+	document.getElementsByName('act')[0].focus();
+
+}
+
+function superScript() {
+
+	var oldtxt = document.getElementsByName('act')[0].value;
+	
+	document.getElementsByName('act')[0].value = oldtxt + "<sup>"+document.getElementById("sup").value+"</sup>" ;
+	
+	document.getElementsByName('act')[0].focus();
+	
+}
+
+
+function subScript() {
+
+	var oldtxt = document.getElementsByName('act')[0].value;
+	
+	document.getElementsByName('act')[0].value = oldtxt + "<sub>"+document.getElementById("sub").value+"</sub>" ;
+	
+	document.getElementsByName('act')[0].focus();
+
+	
+}
+/*
+
+*****************DO NOT EDIT****************
+
+function addImg() {
+	var h=document.getElementById("iheight").value;
+	var w=document.getElementById("iwidth").value;
+	var path = document.getElementById("myImg").value;
+
+	var oldtxt = document.getElementsByName('act')[0].value;
+	
+	document.getElementsByName('act')[0].value = oldtxt + "<img src="+"'" +path+"'" +" "+"height="+h+" "+"width="+w+" "+">" ;
+	
+	document.getElementsByName('act')[0].focus();
+
+	
+}
+
+*/
 function scramble4() {
 	
 	for (var scrm=1;scrm <=4; scrm++) {
@@ -321,7 +374,6 @@ for (mx=1;mx<=c;mx++) {
 	}
 		
 }
-
 
 
 
