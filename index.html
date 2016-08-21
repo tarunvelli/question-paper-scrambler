@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="scramble.js"></script>
+
+<title> 
+
+First build 
+
+</title> 
+
+</head>
+
+<body>
+
+<!-- 
+<div>
+<table>
+<tr><td><input type=file id=myImg size=20><td>Height :<input type=text id=iheight value=200 size=8> Width :<input type=text id=iwidth value=300 size=8><button type="button" onclick=addImg(),show()>Upload</button></tr>
+</table>	
+</div>	
+-->
+
+<div style="width:120;display:inline-block;float:left;">
+
+<center>
+<table> 
+<tr><td><input type=button value=&pi; onClick=addsymb(this.value),show()><td><input type=button value=&tau; onClick=addsymb(this.value),show()><td><input type=button value=&sigma; onClick=addsymb(this.value),show()></tr>
+<tr><td><input type=button value=&chi; onClick=addsymb(this.value),show()><td><input type=button value=&nu; onClick=addsymb(this.value),show()><td><input type=button value=&theta; onClick=addsymb(this.value),show()></tr>
+<tr><td><input type=button value=&eta; onClick=addsymb(this.value),show()><td><input type=button value=&psi; onClick=addsymb(this.value),show()><td><input type=button value=&lambda; onClick=addsymb(this.value),show()></tr>
+<tr><td><input type=button value=&delta; onClick=addsymb(this.value),show()><td><input type=button value=&phi; onClick=addsymb(this.value),show()><td><input type=button value=&mu; onClick=addsymb(this.value),show()></tr>
+<tr><td><input type=button value=&alpha; onClick=addsymb(this.value),show()><td><input type=button value=&beta; onClick=addsymb(this.value),show()><td><input type=button value=&gamma; onClick=addsymb(this.value),show()></tr>
+</table>
+<table>
+<tr><td><input type=button value="Next" onClick=addNewLine(),show()><td></tr>
+<tr><td><input id="sup" type=text size=5 ><input type=button value=sup onClick=superScript(),show()></tr>
+<tr><td><input id="sub" type=text size=5 ><input type=button value=sub onClick=subScript(),show()></tr>
+</table>
+</center>
+</div>
+
+
+<div style="width:39%;display:inline-block;float:left">
+
+<button onClick="addsect()" >Add section</button>
+<button onClick="removesect()" >Remove section</button>
+
+<br>
+<br>
+
+
+<form id=qs name=qs>
+
+</form>
+
+<br>
+
+<button onClick=build(1)>build</button> &nbsp; 
+<!-- <button onClick=show()>show</button> &nbsp; --> 
+<button onClick=scramble()>scramble</button> &nbsp; 
+<!-- <button onClick=check()>check</button> &nbsp; --> <br> <br>
+<button onClick=scramble4()>scramble * 4</button> &nbsp; 
+
+</div>
+
+
+
+	
+<div id="tabdiv" style="width:49%;display:inline-block;float:right;">
+
+<table width=100% id="maintab" border=1>
+<tbody id="tab">
+<tr> <td> <center id="center">Question Paper <hr> </center> </tr>
+</tbody>
+</table>
+
+</div>
+
+
+<a href="" id="down"></a>
+</body>
+
+</html>
