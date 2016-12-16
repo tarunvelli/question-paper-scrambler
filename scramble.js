@@ -161,7 +161,7 @@ function addques(ex) {
 	
 	document.getElementById("p"+ex).appendChild(tx);
 	document.getElementById("p"+ex).appendChild(inx);
-	document.getElementById("p"+ex).appendChild(brr);
+	document.getElementById("p"+ex).appendChild(brr); 
 	
 	var trn=document.createElement("tr");
 	trn.id="trn" + ex + "." + n[ex];
@@ -374,6 +374,7 @@ for (mx=1;mx<=c;mx++) {
 	}
 		
 }
+
 
 
 

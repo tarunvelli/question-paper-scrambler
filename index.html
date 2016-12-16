@@ -1,31 +1,60 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
 
-<html>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Scrambler</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<head> 
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<script src="scramble.js"></script>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-<title> 
-
-Scrambler 
-
-</title> 
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+	<style>
+		button, input {
+			height: 22px !important;
+			line-height: 0px !important;
+			padding: 0 5px !important; 
+			margin: 0 !important;
+		}
+		td, th {
+			padding: 0px 10px !important;
+			border: 1px solid #fff
+		}
+		table, form {
+			margin: 0px !important;
+		}
+	</style>
+	
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scramble.js"></script>
+	
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png">
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
 
 </head>
-
 <body>
 
-<!-- 
-<div>
-<table>
-<tr><td><input type=file id=myImg size=20><td>Height :<input type=text id=iheight value=200 size=8> Width :<input type=text id=iwidth value=300 size=8><button type="button" onclick=addImg(),show()>Upload</button></tr>
-</table>	
-</div>	
--->
-
-<div style="width:14%;display:inline-block;float:left;">
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+    <div class="row">
+      
+<div class="two columns">
 
 <center>
 <table> 
@@ -36,7 +65,7 @@ Scrambler
 <tr><td><input type=button value=&alpha; onClick=addsymb(this.value),show()><td><input type=button value=&beta; onClick=addsymb(this.value),show()><td><input type=button value=&gamma; onClick=addsymb(this.value),show()></tr>
 </table>
 <table>
-<tr><td><input type=button value="Next" onClick=addNewLine(),show()><td></tr>
+<tr><td><input type=button value="Next line" onClick=addNewLine(),show()><td></tr>
 <tr><td><input id="sup" type=text size=5 ><input type=button value=sup onClick=superScript(),show()></tr>
 <tr><td><input id="sub" type=text size=5 ><input type=button value=sub onClick=subScript(),show()></tr>
 </table>
@@ -44,20 +73,17 @@ Scrambler
 </div>
 
 
-<div style="width:35%;display:inline-block;float:left">
+<div class="four columns">
 
 <button onClick="addsect()" >Add section</button>
 <button onClick="removesect()" >Remove section</button>
 
-<br>
-<br>
 
 
 <form id=qs name=qs>
 
 </form>
 
-<br>
 
 <button onClick=build(1)>build</button> &nbsp; 
 <!-- <button onClick=show()>show</button> &nbsp; --> 
@@ -70,7 +96,7 @@ Scrambler
 
 
 	
-<div id="tabdiv" style="width:49%;display:inline-block;float:right;">
+<div id="tabdiv" class="six columns">
 
 <table width=100% id="maintab" border=1>
 <tbody id="tab">
@@ -82,6 +108,11 @@ Scrambler
 
 
 <a href="" id="down"></a>
-</body>
 
+    </div>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
