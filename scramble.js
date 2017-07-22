@@ -7,7 +7,7 @@ n[0]=0;
 function counter() {
 	c=c+1;
 	n[c]=0;
-	}
+}
 
 function prebuild(setno) {
 		build(setno);
@@ -15,7 +15,7 @@ function prebuild(setno) {
 }
 
 function build (setno) {
-	document.getElementById("center").innerHTML="Question Paper  " + setno;
+	document.getElementById("center").innerHTML +="<br>Set : "+setno;
 	document.getElementById("maintab").setAttribute("border","0");
 
 	var txt=document.getElementById("tabdiv").innerHTML;
@@ -26,7 +26,6 @@ function build (setno) {
   emptyLink.download = "QuestionPaper_" + setno +".doc";
 	emptyLink.click();
 
-	document.getElementById("maintab").setAttribute("border","1");
 	document.getElementById("center").innerHTML="Question Paper";
 }
 
@@ -50,7 +49,7 @@ function addsect() {
 	var fr=document.createElement("input");
 	fr.setAttribute("value"," Section " + c );
 	fr.setAttribute("id","Section" + c );
-	fr.setAttribute("size","10");
+	fr.setAttribute("size","8");
 	fr.setAttribute("onkeyup","show()");
 	fr.setAttribute("onkeypress","handle(event)");
 	fr.setAttribute("onfocus","blurrer(),this.name='act'");
@@ -228,6 +227,7 @@ function addNewLine() {
   el.focus();
 }
 
+
 function superScript() {
 	var el = document.getElementsByName('act')[0];
 	var start = el.selectionStart;
@@ -236,7 +236,7 @@ function superScript() {
   var before = text.substring(0, start);
   var after  = text.substring(end, text.length);
   el.value = (before + "<sup>"+document.getElementById("sup").value+"</sup>" + after);
-  el.selectionStart = el.selectionEnd = start + "<sup>"+document.getElementById("sup").value+"</sup>".length;
+  el.selectionStart = el.selectionEnd = start + ("<sup>"+document.getElementById("sup").value+"</sup>").length;
   el.focus();
 }
 
@@ -248,9 +248,10 @@ function subScript() {
   var before = text.substring(0, start);
   var after  = text.substring(end, text.length);
   el.value = (before + "<sub>"+document.getElementById("sub").value+"</sub>" + after);
-  el.selectionStart = el.selectionEnd = start + "<sub>"+document.getElementById("sub").value+"</sub>".length;
+  el.selectionStart = el.selectionEnd = start + ("<sub>"+document.getElementById("sub").value+"</sub>").length;
   el.focus();
 }
+
 /*
 
 *****************DO NOT EDIT****************
@@ -270,6 +271,7 @@ function addImg() {
 }
 
 */
+
 function scramble4() {
 	for (var scrm=1;scrm <=4; scrm++) {
 	show();

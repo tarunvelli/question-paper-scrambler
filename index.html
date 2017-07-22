@@ -44,18 +44,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="scramble.js"></script>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link rel="icon" type="image/png" href="images/favicon.png">
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 </head>
 <body>
+<div class="row">
 
-  <!-- Primary Page Layout
+  <!-- Symbols
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <div class="row">
 
 <div class="two columns">
 
@@ -73,22 +67,22 @@
 <tr><td><input id="sub" type=text size=5 ><input type=button value=sub onClick=subScript(),show()></tr>
 </table>
 </center>
+
 </div>
 
+<!-- Input Entry
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <div class="four columns">
 
 <button onClick="addsect()" >Add section</button>
 <button onClick="removesect()" >Remove section</button>
 
-
-
 <form id=qs name=qs>
 
 </form>
 
-
-<button onClick=prebuild(1)>build</button> &nbsp; 
+<button onClick=prebuild(1)>build</button> &nbsp;
 <!-- <button onClick=show()>show</button> &nbsp; -->
 <button onClick=scramble()>scramble</button> &nbsp;
 <!-- <button onClick=check()>check</button> &nbsp; --> <br> <br>
@@ -97,25 +91,21 @@
 </div>
 
 
-
+<!-- Question Paper Preview
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <div id="tabdiv" class="six columns">
 
 <table width=100% id="maintab" border=1>
 <tbody id="tab">
-<tr> <td> <center id="center">Question Paper <hr> </center> </tr>
+<tr> <td> <center id="center">Question Paper</center> </tr>
 </tbody>
 </table>
 
 </div>
 
-
 <a href="" id="down"></a>
 
-    </div>
-
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</div>
 </body>
 </html>
