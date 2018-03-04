@@ -1,0 +1,20 @@
+button, input {
+  height: 22px !important;
+  line-height: 0px !important;
+  padding: 0 5px !important;
+  margin: 0 !important;
+}
+
+input {
+text-align: left;
+text-transform: none;
+}
+
+td, th {
+  padding: 0px 10px !important;
+  border: 1px solid #fff
+}
+
+table, form {
+  margin: 0px !important;
+}
